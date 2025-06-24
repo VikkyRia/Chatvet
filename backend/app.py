@@ -31,5 +31,4 @@ def analyze():
     return jsonify({"advice": matched_advice})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000
-)
+    app.run(host='0.0.0.0', port=5000)
