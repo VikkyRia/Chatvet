@@ -13,7 +13,9 @@ function App() {
       body: JSON.stringify({ pet_type: petType, symptom })
     })
     const data = await res.json()
-    setResponse(data.advice)
+    setResponse (data?.advice || "No advice received.");
+console.log("Full API response:", data);
+
   }
 
   return (
